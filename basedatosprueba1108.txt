@@ -1,0 +1,44 @@
+base de datos proyecto moquegua
+
+Proceso cuadre de caja: 
+
+Cuadre_caja
+id int identity 
+cod surtidor 
+lado1_95 
+lado2_95 
+lado1_90 
+lado2_90 
+lado1_84 
+lado2_84
+lado1_db5
+lado2_db5  
+venta_l1_95
+venta_l2_95
+venta_l1_90
+venta_l2_90
+venta_l1_84
+venta_l2_84
+venta_l1_db5
+venta_l2_db5
+totalglns_95
+totalglns_90
+totalglns_84
+totalglns_db5
+precioxdia_90
+precioxdia_95
+precioxdia_84
+precioxdia_db5
+total_95
+total_90
+total_84
+total_db5
+Visa 
+deposito
+cod_cliente
+monto_cliente
+descuento
+monto_total 
+adelanto
+faltante
+Entrega_turno
