@@ -8,3 +8,9 @@
         <li><a href="index.php?ruta=costo_gasolina">Coste de gasolina</a></li>
     </ul>
 </nav>
+<section>
+    <?php
+      $rutas = new rutasControlador();
+      $rutas -> Rutas();
+    ?>
+</section>

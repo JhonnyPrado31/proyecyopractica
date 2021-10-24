@@ -1,6 +1,6 @@
 <?php
 
-require_once "conexion/conexion_sis.php";
+require_once "conexion_sis.php";
 
 class AdminM extends ConexionBD{
 
@@ -10,8 +10,8 @@ class AdminM extends ConexionBD{
         $pdo -> execute();
 
         return $pdo ->fetch();
-
-
+        $pdo ->close;
+        
     }
 }
 

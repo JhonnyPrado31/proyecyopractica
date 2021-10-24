@@ -10,7 +10,7 @@ class rutasControlador{
             $rutas = $_GET["ruta"];
 
         }else{
-            $rutas = "index";
+            $rutas = "ingreso";
         }
 
         $respuesta = Modelo::RutasModelo($rutas);

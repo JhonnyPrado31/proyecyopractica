@@ -7,9 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-      <?php
-        include "modulos/ingreso.php"
-      ?>
+     <?php
+      $rutas = new rutasControlador();
+      $rutas -> Rutas();
+    ?>
 </section>
 </body>
 </html>

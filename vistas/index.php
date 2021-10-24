@@ -9,14 +9,7 @@
 <body>
 <body>
       <?php
-       
+        include "modulos/menu.php"
       ?>
-
-<section>
-    <?php
-      $rutas = new rutasControlador();
-      $rutas -> Rutas();
-    ?>
-</section>
 </body>
 </html>

@@ -13,6 +13,7 @@ class adminC{
                 session_start();
 
                 $_SESSION["ingreso"] = true;
+                echo"si entro";
                 header("location:index.php?ruta=registro_cuadre");
 
             }else {
