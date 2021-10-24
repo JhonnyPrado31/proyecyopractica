@@ -1,3 +1,13 @@
+<?php 
+
+session_start();
+if(!$_SESSION["ingreso"]){
+    header("Location:index.php?ruta=ingreso");
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

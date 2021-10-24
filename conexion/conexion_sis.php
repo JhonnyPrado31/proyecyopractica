@@ -1,11 +1,13 @@
 <?php
-try {
-    $conn = new PDO("sqlsrv:server = tcp:originmoqueguaproyect.database.windows.net,1433; Database = BaseMoquegua", "master", "LAvidaesmrd17");
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $e) {
-    print("Error connecting to SQL Server.");
-    die(print_r($e));
-}
 
+class ConexionBD{
+    Public function cBD(){
+        $connectionInfo = array("UID" => "master", "pwd" => "{your_password_here}", "Database" => "BaseMoquegua", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+        $serverName = "tcp:originmoqueguaproyect.database.windows.net,1433";
+        $conn = sqlsrv_connect($serverName, $connectionInfo);
+        return $conn;
+    
+    }
+}
+    
 ?>  
