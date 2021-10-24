@@ -5,7 +5,7 @@ class adminC{
         if(isset($_POST["usuarioi"])){
             $datosC = array("usuario" => $_POST["usuarioi"],"contraseña" => $_POST["contraseñai"]);
 
-            $tablaBD = "BaseMoquegua";
+            $tablaBD = "usuarios";
 
             $respuesta = AdminM::IngresoM($datosC,$tablaBD);
 

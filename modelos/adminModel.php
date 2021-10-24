@@ -10,7 +10,6 @@ class AdminM extends ConexionBD{
         $pdo -> execute();
 
         return $pdo ->fetch();
-        $pdo ->close();
 
 
     }
